@@ -503,6 +503,38 @@ select.form-control {
     border-color: #00B4D8;
 }
 
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 180, 216, 0.25);
+}
+
+.form-check-input.female:checked {
+    background-color: #FFC0CB;
+    border-color: #FFC0CB;
+}
+
+.form-check-input.female:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 192, 203, 0.25);
+}
+
+
+.form-check-input.boy:checked {
+    background-color: #5be385;
+    border-color: #5be385;
+}
+
+.form-check-input.boy:focus {
+    box-shadow: 0 0 0 0.25rem rgba(91, 227, 133, 0.25);
+}
+
+.form-check-input.girl:checked {
+    background-color: #c35be3;
+    border-color: #c35be3;
+}
+
+.form-check-input.girl:focus {
+    box-shadow: 0 0 0 0.25rem rgba(195, 91, 227, 0.25);
+}
+
 .col-form-label {
     position: absolute;
     top: 2px;
@@ -951,12 +983,25 @@ select.form-control {
 .person .tlt-box {
     border-radius: 10px;
     border: 1px solid;
+    color: #002868;
 }
 
 .person.person-male .tlt-box {
     background-color: #f1fafc;
     border-color: rgba(0, 180, 216, 0.19);
-    color: #002868;
+}
+
+.person.person-female .tlt-box {
+    background-color: #FDF5F6;
+    border-color: #FEE1E6;
+}
+.person.person-boy .tlt-box {
+    background-color: #E2FFE0;
+    border-color: #b0f5c6;
+}
+.person.person-girl .tlt-box {
+    background-color: #f8edfc;
+    border-color: #f6e3fc;
 }
 
 .person .tlt-box .tlt {
@@ -981,6 +1026,18 @@ select.form-control {
 
 .person-male .desc-box .tlt::after {
     background-color: #00B4D8;
+}
+
+.person-female .desc-box .tlt::after {
+    background-color: #FFC0CB;
+}
+
+.person-boy .desc-box .tlt::after {
+    background-color: #5be385;
+}
+
+.person-girl .desc-box .tlt::after {
+    background-color: #c35be3;
 }
 
 .uploadImage {
@@ -1024,6 +1081,25 @@ select.form-control {
     background-color: #0bc0cf;
     box-shadow: 0 5px 15px rgba(0, 180, 216, 0.18);
     border-color: #0bc0cf;
+}
+
+.person-female .uploadImage .btn {
+    color: #fff;
+    background-color: #FFC0CB;
+    box-shadow: 0 5px 15px rgba(255, 192, 203, 0.47);
+    border-color: #FFC0CB;
+}
+.person-boy .uploadImage .btn {
+    color: #fff;
+    background-color: #5be385;
+    box-shadow: 0 5px 15px rgba(91, 227, 133, 0.47);
+    border-color: #5be385;
+}
+.person-girl .uploadImage .btn {
+    color: #fff;
+    background-color: #c35be3;
+    box-shadow: 0 5px 15px rgba(195, 91, 227, 0.47);
+    border-color: #c35be3;
 }
 
 @media (max-width:991.98px) {}
