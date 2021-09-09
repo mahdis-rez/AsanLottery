@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'fontawesome';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fontawesome/fa-brands-400.eot");
+    src: url("../fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+
+@font-face {
+    font-family: 'fontawesome';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    /* src: url("../fonts/font/fa-regular-400.eot"); */
+    src: url("../fonts/fontawesome/fa-regular-400.eot");
+    src: url("../fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: 'fontawesome';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../fonts/fontawesome/fa-solid-900.eot");
+    src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+
+
+
+@font-face {
+    font-family: 'directa';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/directa/Directa.otf');
+}
+
+@font-face {
+    font-family: 'directa';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/directa/Directa_Bold.otf');
+}
+
+@font-face {
+    font-family: 'directa';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/directa/Directa_Thin.otf');
+}
+
+@font-face {
+    font-family: 'directa';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/directa/Directa_Light.otf');
+}
+
+
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Sans/eot/Sans.eot');
+    src: url('../fonts/Sans/eot/Sans.eot') format('embedded-opentype'),
+        url('../fonts/Sans/ttf/Sans.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Sans/eot/Sans_UltraLight.eot');
+    src: url('../fonts/Sans/eot/Sans_UltraLight.eot') format('embedded-opentype'),
+        url('../fonts/Sans/ttf/Sans_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Sans/eot/Sans_Light.eot');
+    src: url('../fonts/Sans/eot/Sans_Light.eot') format('embedded-opentype'),
+        url('../fonts/Sans/ttf/Sans_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Sans/eot/Sans_Medium.eot');
+    src: url('../fonts/Sans/eot/Sans_Medium.eot') format('embedded-opentype'),
+        url('../fonts/Sans/ttf/Sans_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Sans/eot/Sans_Bold.eot');
+    src: url('../fonts/Sans/eot/Sans_Bold.eot') format('embedded-opentype'),
+        url('../fonts/Sans/ttf/Sans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Sans/eot/Sans_Black.eot');
+    src: url('../fonts/Sans/eot/Sans_Black.eot') format('embedded-opentype'),
+        url('../fonts/Sans/ttf/Sans_Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FaNum';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Sans/ttf/IRANSans_FaNum.ttf") format("truetype");
+}

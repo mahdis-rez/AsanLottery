@@ -1,0 +1,358 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lottery</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- <link href="assets/css/fontawesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="header py-3 container-fluid">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <nav class="navbar p-0">
+                        <div class="d-flex">
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="#">ثبت نام لاتاری</a>
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="#">سوالات متداول</a>
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="#">ارتباط با ما</a>
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="col-2 d-flex justify-content-end">
+                    <button type="button" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
+                        <i class="bi bi-person size-2 ms-2"></i>
+                        ثبت نام / ورود
+                        <i class="bi bi-chevron-down size-4 me-2"></i>
+                    </button>
+                </div>
+                <div class="col-12 border-bottom my-3"></div>
+                <div class="col d-flex justify-content-start align-items-center">
+                    <span class="support-icon ms-2"><i class="bi bi-headset size-2 text-gray"></i></span>
+                    <span class="text-gray size-5">
+                        چگونه می‌توانیم کمکتان کنیم ؟
+                    </span>
+                    <span class="me-2">
+                        <a href="/contact-us" class="text-decoration size-5">ارتباط با پشتیبانی</a>
+                    </span>
+                </div>
+                <div class="col-2">
+                    <div class="logo d-flex justify-content-end">
+                        <a href="#" class="center-content">
+                            <img src="assets/images/asanlottery_mainlogo.png" alt="آسان لاتاری" title="Asan Lottery" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main py-3 container-fluid">
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-start ">
+                    <div class="col-12 mb-4 py-3">
+                        <div class="main-title min-title d-flex align-items-center justify-content-center">
+                           
+                            <div class="text d-flex align-items-center">
+                                <h2 class="mb-0 d-flex">
+                                    <span class="text-red d-block h5 sans-Light mb-0"> ثبت نام</span>
+                                    <span class="text-darkBlue d-block me-2 h5 mb-0 sans-bold"> لاتاری آمریکا </span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="main-form-box main-form p-4">
+                            <div class="person person-male w-100 d-flex flex-wrap ">
+                                <div class="tlt-box col-12 p-3 mb-4">
+                                    <h2 class="tlt m-0">مشخصات متقاضی</h2>
+                                </div>
+                                <div class="row desc-box">
+                                    <div class="col-12 mb-4">
+                                        <span class="tlt d-inline-block pb-2 text-darkBlue">مشخصات فردی</span>
+                                    </div>
+                                    <div class="col-10 row mb-4">
+                                        <div class="col-12 mb-2"><span class="size-5 text-lightGray">جنسیت</span></div>
+                                        <div class="col-2">
+                                            <div class="form-control-custome center-content">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="marital"
+                                                        id="single" checked>
+                                                    <label class="form-check-label size-5 text-gray pointer"
+                                                        for="single">آقا</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="form-control-custome center-content">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="marital"
+                                                        id="single" >
+                                                    <label class="form-check-label size-5 text-gray pointer"
+                                                        for="single">خانم</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">نام (به فارسی)</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">نام خانوادگی (به فارسی)</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">نام (به انگلیسی مطابق با پاسپورت)</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">نام خانوادگی (به انگلیسی مطابق با پاسپورت)</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">تاریخ تولد</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">کشور محل تولد</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">شهر محل تولد</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">کشور تابعیت</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">شغل متقاضی </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">بالاترین مدرک تحصیلی </label>
+                                            <div class="col-12">
+                                                <select class="form-control FaNum"
+                                                            id="edu">
+                                                            <option>دیپلم</option>
+                                                            <option>لیسانس</option>
+                                                            <option>فوق لیسانس</option>
+                                                            <option>دکترا</option>
+                                                        </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-4">
+                                        <span class="tlt d-inline-block pb-2 text-darkBlue">اطلاعات پاسپورت </span>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">شماره پاسپورت </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">کشور صدور پاسپورت </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">تاریخ انقضای پاسپورت </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-4">
+                                        <span class="tlt d-inline-block pb-2 text-darkBlue">عکس متقاضی </span>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="uploadImage p-4 d-flex flex-wrap">
+                                            <div class="col-7">
+                                                <ul class="pe-3 mb-0">
+                                                    <li class="mb-2 size-5">باید زاویه مستقیم به دوربین داشته باشید</li>
+                                                    <li class="mb-2 size-5">عکس به شکل مربع و 600 پیکسل در 600 پیکسل مورد قبول است</li>
+                                                    <li class="mb-2 size-5">زمینه عکس باید سفید باشد</li>
+                                                    <li class="mb-2 size-5">عکس باید رنگی باشد و عکس سیاه و سفید مردود است</li>
+                                                    <li class="mb-2 size-5">عکس لاتاری باید بدون عینک و سمعک باشد</li>
+                                                    <li class="mb-2 size-5">موی شما نباید روی صورت شما را بپوشاند</li>
+                                                    <li class="mb-2 size-5">نیازی به معلوم بودن گوش ها نیست</li>
+                                                    <li class="mb-2 size-5">عکس با حجاب هم برای مسلمانان و سایر ادیانی که حجاب در آنها تعریف شده است ممانعتی ندارد</li>
+                                                    <li class="mb-2 size-5">گردی صورت باید کاملا واضح باشد و با چیزی پوشانده نشود</li>
+                                                    <li class="mb-2 size-5">نیازی به چاپ عکس ندارید، عکس باید به صورت فایل دیجیتال به شما تحویل داده شود</li>
+                                                    <li class="mb-2 size-5">عکس باید مربوط به شش ماه گذشته باشد. نباید سن عکس بیش از 6 ماه باشد</li>
+                                                    <li class="size-5">از عکسی که سال گذشته استفاده کردید نباید مجدد استفاده کنید</li>
+                                                 
+                                                </ul>
+                                            </div>
+                                            <div class="col-5 d-flex flex-wrap justify-content-end align-items-center">
+                                                    <div class="img-boxes  uploadInp p-2">
+                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <span class="icon text-darkBlue"><i class="h1 bi bi-cloud-arrow-up"></i></span>
+                                                        <span class="size-3 text-darkBlue sans-Bold">پیش نمایش تصویر</span>
+                                                        <span class="size-6 mt-2 text-red sans-Bold">هنوز عکسی انتخاب نشده</span>
+                                                        <span class="size-6 mt-3 text-red btn">انتخاب عکس</span>
+                                                    </div>
+                                                    </div>
+                                                    <div class="img-boxes d-flex justify-content-end me-4">
+                                                        <img src="assets/images/sample-lottery-img.png" />
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-4">
+                                        <span class="tlt d-inline-block pb-2 text-darkBlue">اطلاعات پستی </span>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">کشور محل سکونت فعلی</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">استان / ایالت محل سکونت</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">شهر محل سکونت فعلی</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">کد پستی (بدون خط تیره)</label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">آدرس محل سکونت فعلی</label>
+                                            <div class="col-12">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 my-4">
+                                        <span class="tlt d-inline-block pb-2 text-darkBlue">اطلاعات کاربری </span>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">شماره موبایل فعال </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">تایید شماره موبایل </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="form-group ">
+                                            <label class="col-form-label size-5 text-lightGray">ایمیل فعال </label>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="staticEmail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 mt-4 d-flex justify-content-center">
+                               <div class="col-4"> 
+                                   <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue">
+                                        ثبت اطلاعات
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
