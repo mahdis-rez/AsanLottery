@@ -995,10 +995,12 @@ select.form-control {
     background-color: #FDF5F6;
     border-color: #FEE1E6;
 }
+
 .person.person-boy .tlt-box {
     background-color: #E2FFE0;
     border-color: #b0f5c6;
 }
+
 .person.person-girl .tlt-box {
     background-color: #f8edfc;
     border-color: #f6e3fc;
@@ -1089,12 +1091,14 @@ select.form-control {
     box-shadow: 0 5px 15px rgba(255, 192, 203, 0.47);
     border-color: #FFC0CB;
 }
+
 .person-boy .uploadImage .btn {
     color: #fff;
     background-color: #5be385;
     box-shadow: 0 5px 15px rgba(91, 227, 133, 0.47);
     border-color: #5be385;
 }
+
 .person-girl .uploadImage .btn {
     color: #fff;
     background-color: #c35be3;
@@ -1102,4 +1106,74 @@ select.form-control {
     border-color: #c35be3;
 }
 
+.bg-usFlag {
+    background-image: url(../images/usFlag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.bg-usFlag::before {
+    content: "";
+    background: -webkit-linear-gradient(216deg, #2f046b -22%, #2F046B 9%, #FF305B 83%, #FF305B 105%);
+    background: -moz-linear-gradient(216deg, #2f046b -22%, #2F046B 9%, #FF305B 83%, #FF305B 105%);
+    background: linear-gradient(216deg, #2f046b -22%, #2F046B 9%, #FF305B 83%, #FF305B 105%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    opacity: .8;
+    border-radius: 20px;
+}
+
+.contact-bg .desc {
+    z-index: 9;
+}
+
+.contact-bg .form {
+    z-index: 9;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+}
+
+.contact-bg .desc .title h2 {
+    position: relative;
+}
+
+.contact-bg .desc .title h2::after {
+    content: "";
+    width: 15px;
+    height: 3.4px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 25%;
+}
+
+.about-us p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-us .icon span{
+    background: rgba(0,0,0,.21);
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+} 
+.contact-us .icon span img{
+    width: 100%;
+}
+.contact-us  .info ul{
+    list-style-type: none;
+}
 @media (max-width:991.98px) {}
