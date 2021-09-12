@@ -48,6 +48,10 @@ p {
     font-family: 'FaNum';
 }
 
+.ltr {
+    direction: ltr;
+}
+
 /* colors */
 .text-link {
     color: #0072FF;
@@ -539,8 +543,26 @@ select.form-control {
     position: absolute;
     top: 2px;
     right: 10px;
-    background: #fff;
+    /* background: #fff; */
     padding: 0 10px;
+    /* z-index: 99; */
+}
+
+.col-form-label span {
+    position: relative;
+    z-index: 9;
+}
+
+.col-form-label::after {
+    content: "";
+    /* z-index: 9; */
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 8px;
+    left: 0;
+    right: 0;
 }
 
 .form-control:focus {
@@ -1107,29 +1129,48 @@ select.form-control {
 }
 
 .bg-usFlag {
+    /* background-image: url(../images/usFlag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; */
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    /* /////// */
+    align-items: center;
+    /* max-height: 350px; */
+}
+
+.contact-bg::before,
+.contact-bg::after {
+    content: "";
+    max-height: 350px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    top: 140px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.bg-usFlag::before {
     background-image: url(../images/usFlag.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: auto;
-    position: relative;
-    border-radius: 20px;
-
 }
 
-.bg-usFlag::before {
-    content: "";
+.bg-usFlag::after {
     background: -webkit-linear-gradient(216deg, #2f046b -22%, #2F046B 9%, #FF305B 83%, #FF305B 105%);
     background: -moz-linear-gradient(216deg, #2f046b -22%, #2F046B 9%, #FF305B 83%, #FF305B 105%);
     background: linear-gradient(216deg, #2f046b -22%, #2F046B 9%, #FF305B 83%, #FF305B 105%);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
     opacity: .8;
-    border-radius: 20px;
+}
+
+.contact-bg.register::before,
+.contact-bg.register::after {
+    top: 165px;
 }
 
 .contact-bg .desc {
@@ -1138,10 +1179,10 @@ select.form-control {
 
 .contact-bg .form {
     z-index: 9;
-    position: absolute;
-    left: 50px;
-    top: -100px;
+
 }
+
+
 
 .contact-bg .desc .title h2 {
     position: relative;
@@ -1160,20 +1201,32 @@ select.form-control {
     border-radius: 25%;
 }
 
+.contact-bg .desc .logo img {
+    height: 43px;
+}
+
 .about-us p {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.contact-us .icon span{
-    background: rgba(0,0,0,.21);
+.contact-us .icon span {
+    background: rgba(0, 0, 0, .21);
     border-radius: 10px;
     width: 60px;
     height: 60px;
-} 
-.contact-us .icon span img{
+}
+
+.contact-us .icon span img {
     width: 100%;
 }
-.contact-us  .info ul{
+
+.contact-us .info ul {
     list-style-type: none;
 }
+
+.recaptch img {
+    height: 80px;
+    width: auto;
+}
+
 @media (max-width:991.98px) {}
