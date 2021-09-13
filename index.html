@@ -14,6 +14,138 @@
 </head>
 
 <body>
+    <div class="modal fade" id="logRegModal" tabindex="-1" aria-labelledby="logRegModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-5 pt-5">
+            <div class="modal-content main-form-box overflow-hidden">
+                <div class="modal-body p-0 ">
+                    <div class="p-4">
+                        <div class="title center-content flex-column pb-3 mb-4">
+                            <span class="text-darkBlue sans-Black" id="logRegTitle">ورود به پنل کاربری</span>
+                        </div>
+                        <div>
+                            <form id="logForm" class="row logRegForm m-0" action="lottery-form.html">
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span> نام کاربری</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" id="staticEmail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="form-group">
+                                        <label class="col-form-label size-5 text-gray"><span>رمز عبور</span></label>
+                                        <div class="col-12 ">
+                                            <input type="password" class="form-control" id="staticEmail">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-start">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="sex"
+                                                id="male">
+                                            <label class="form-check-label size-5 text-gray pointer"
+                                                for="male">من را به خاطر بسپار</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="/" class="center-content text-link text-decoration size-5">
+                                            فراموشی رمز عبور  
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="center-content recaptch">
+                                        <img src="assets/images/Recaptcha+Image.jpg" height=""/>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
+                                        ورود
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <span href="/" class="center-content text-gray size-5">
+                                       کاربر جدید هستید؟ 
+                                       <a id="regButton" href="/" class="text-link me-2 sans-Bold text-decoration">ثبت نام</a>
+                                    </span>
+                                </div>
+
+                            </form>
+                            <form id="regForm" class="row logRegForm m-0 regForm" action="lottery-form.html">
+                                 
+   
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>نام کاربری</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" name="userName" id="userName">
+                                            <!-- <small id="userNameHelp" class="text-red mt-1 text-start d-block size-6">لطفا انگلیسی وارد کنید</small> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                 
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                        <span>شماره تماس</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="tel" class="form-control " name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="form-group">
+                                        <label class="col-form-label size-5 text-gray">
+                                        <span>رمز عبور</span>
+                                    </label>
+                                        <div class="col-12 ">
+                                            <input type="password" class="form-control" name="password" id="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="form-group">
+                                        <label class="col-form-label size-5 text-gray">
+                                        <span>تکرار رمز عبور</span>
+                                    </label>
+                                        <div class="col-12 ">
+                                            <input type="password" class="form-control" name="rePassword" id="rePassword">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
+                                        ثبت نام
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="col-12 mt-3">
+                                    <span href="/" class="center-content text-gray size-5">
+                                        از قبل ثبت نام کرده‌اید؟
+                                       <a id="logButton" href="/" class="text-link me-2 sans-Bold text-decoration">ورود</a>
+                                    </span>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <header class="header py-3 container-fluid">
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -21,16 +153,16 @@
                     <nav class="navbar p-0">
                         <div class="d-flex">
                             <a class="text-gray py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="#">ثبت نام لاتاری</a>
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
                             <a class="text-gray py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="#">سوالات متداول</a>
+                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
                             <a class="text-gray py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
                         </div>
 
                     </nav>
                 </div>
                 <div class="col-2 d-flex justify-content-end">
-                    <button type="button" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#logRegModal" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
                         <i class="bi bi-person size-2 ms-2"></i>
                         ثبت نام / ورود
                         <i class="bi bi-chevron-down size-4 me-2"></i>
@@ -535,6 +667,22 @@
                 $(this).toggleClass("active");
                 $(this).children('.answer').slideToggle("slow");
                 $(this).find('.icon').toggleClass("rotate");
+                e.preventDefault();
+                return false;
+            });
+
+            $('#regButton').click(function (e) {
+                $('#regForm').show();
+                $('#logForm').hide();
+                $('#logRegTitle').text('ایجاد حساب کاربری');
+                
+                e.preventDefault();
+                return false;
+            });
+            $('#logButton').click(function (e) {
+                $('#logForm').show();
+                $('#regForm').hide();
+                $('#logRegTitle').text('ورود به پنل کاربری');
                 e.preventDefault();
                 return false;
             });
