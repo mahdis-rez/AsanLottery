@@ -53,6 +53,10 @@ p {
 }
 
 /* colors */
+.text-light {
+    color: #e6e6e6 !important;
+}
+
 .text-link {
     color: #0072FF;
 }
@@ -83,6 +87,14 @@ p {
 
 .text-lightBlue {
     color: #00B4D8;
+}
+
+.text-orange {
+    color: #ffbb00;
+}
+
+.text-green {
+    color: #00C56E;
 }
 
 .bg-lightBlue {
@@ -431,6 +443,18 @@ p {
     /* height: 400px; */
 }
 
+.bi-clipboard.check::before {
+    content: "\f28b";
+}
+
+.invitation-modal {
+    border-radius: 30px;
+}
+
+.invitation-code {
+    font-family: monospace;
+}
+
 .main-form-box.large {
     max-width: 450px;
 }
@@ -776,7 +800,8 @@ select.form-control {
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
-.faqRow .question:hover{
+
+.faqRow .question:hover {
     background-color: #f8f8f8;
 }
 
@@ -1071,6 +1096,12 @@ select.form-control {
     background-color: #5be385;
 }
 
+.person .desc-box .tlt-orange::after {
+    background-color: #ffbb00;
+    left: 0;
+    margin: 0 auto;
+}
+
 .person-girl .desc-box .tlt::after {
     background-color: #c35be3;
 }
@@ -1227,6 +1258,18 @@ select.form-control {
     background-color: #ffc800;
 }
 
+
+
+.contact-us.footer-contect .icon span {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .11);
+}
+
+.contact-us.footer-contect .info {
+    width: calc(100% - 50px);
+}
+
 .contact-us .icon span img {
     width: 100%;
 }
@@ -1263,8 +1306,46 @@ select.form-control {
     color: #6176A8;
     transition: all 0.3s ease-in;
 }
-.faq-category li:hover{
+
+.faq-category li:hover {
     color: #0072FF;
+}
+
+.footer {
+    /* background-color: #001E4D; */
+    background: rgb(0, 30, 77);
+    background: linear-gradient(0deg, rgba(0, 30, 77, 1) 0%, rgba(36, 47, 121, 1) 100%);
+
+    border-radius: 75px 75px 0 0;
+}
+
+.ft-title {
+    border-bottom: 1px solid #30528e;
+}
+
+.ft-links {
+    list-style-type: none;
+}
+
+.ft-links li {
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+
+.ft-links li::before {
+    transition: all 0.3s ease-in;
+    content: "|";
+    margin-left: .85rem;
+    color: #55b6cc;
+}
+
+.ft-links li:hover::before {
+    margin-left: 1.15rem;
+}
+
+.copyRight {
+    border-top: 1px solid #AFB7CB;
 }
 
 @media (max-width:991.98px) {}

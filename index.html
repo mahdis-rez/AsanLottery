@@ -46,21 +46,20 @@
                                 <div class="col-12 mt-3 d-flex justify-content-between align-items-center">
                                     <div class="d-flex justify-content-start">
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" name="sex"
-                                                id="male">
-                                            <label class="form-check-label size-5 text-gray pointer"
-                                                for="male">من را به خاطر بسپار</label>
+                                            <input type="checkbox" class="form-check-input" name="sex" id="male">
+                                            <label class="form-check-label size-5 text-gray pointer" for="male">من را به
+                                                خاطر بسپار</label>
                                         </div>
                                     </div>
                                     <div>
-                                        <a href="/" class="center-content text-link text-decoration size-5">
-                                            فراموشی رمز عبور  
+                                        <a class="center-content text-link text-decoration size-5 forgetPassButton pointer">
+                                            فراموشی رمز عبور
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
                                     <div class="center-content recaptch">
-                                        <img src="assets/images/Recaptcha+Image.jpg" height=""/>
+                                        <img src="assets/images/Recaptcha+Image.jpg" height="" />
                                     </div>
                                 </div>
                                 <div class="col-12 mt-4">
@@ -70,16 +69,17 @@
                                     </button>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <span href="/" class="center-content text-gray size-5">
-                                       کاربر جدید هستید؟ 
-                                       <a id="regButton" href="/" class="text-link me-2 sans-Bold text-decoration">ثبت نام</a>
+                                    <span class="center-content text-gray size-5">
+                                        کاربر جدید هستید؟
+                                        <a class="text-link me-2 sans-Bold text-decoration regButton pointer">ثبت
+                                            نام</a>
                                     </span>
                                 </div>
 
                             </form>
                             <form id="regForm" class="row logRegForm m-0 regForm" action="lottery-form.html">
-                                 
-   
+
+
                                 <div class="col-12 mt-3">
                                     <div class="form-group ">
                                         <label class="col-form-label size-5 text-gray">
@@ -91,11 +91,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                 
+
                                 <div class="col-12 mt-3">
                                     <div class="form-group ">
                                         <label class="col-form-label size-5 text-gray">
-                                        <span>شماره تماس</span>
+                                            <span>شماره تماس</span>
                                         </label>
                                         <div class="col-12">
                                             <input type="tel" class="form-control " name="phone" id="phone">
@@ -105,8 +105,8 @@
                                 <div class="col-12 mt-3">
                                     <div class="form-group">
                                         <label class="col-form-label size-5 text-gray">
-                                        <span>رمز عبور</span>
-                                    </label>
+                                            <span>رمز عبور</span>
+                                        </label>
                                         <div class="col-12 ">
                                             <input type="password" class="form-control" name="password" id="password">
                                         </div>
@@ -115,10 +115,11 @@
                                 <div class="col-12 mt-3">
                                     <div class="form-group">
                                         <label class="col-form-label size-5 text-gray">
-                                        <span>تکرار رمز عبور</span>
-                                    </label>
+                                            <span>تکرار رمز عبور</span>
+                                        </label>
                                         <div class="col-12 ">
-                                            <input type="password" class="form-control" name="rePassword" id="rePassword">
+                                            <input type="password" class="form-control" name="rePassword"
+                                                id="rePassword">
                                         </div>
                                     </div>
                                 </div>
@@ -129,13 +130,50 @@
                                         <i class="bi bi-chevron-left size-4 me-2"></i>
                                     </button>
                                 </div>
-                                
+
                                 <div class="col-12 mt-3">
-                                    <span href="/" class="center-content text-gray size-5">
+                                    <span class="center-content text-gray size-5">
                                         از قبل ثبت نام کرده‌اید؟
-                                       <a id="logButton" href="/" class="text-link me-2 sans-Bold text-decoration">ورود</a>
+                                        <a class="text-link me-2 sans-Bold text-decoration logButton pointer">ورود</a>
                                     </span>
                                 </div>
+
+                            </form>
+                            <form id="forgetPassForm" class="row logRegForm m-0 regForm" action="lottery-form.html">
+
+
+                                <div class="col-12 mt-3">
+                                    <span href="/" class="center-content text-gray size-6">
+                                        برای دسترسی به داشبورد خود ، لطفاً شماره تلفنی را که در طی مراحل ثبت نام تهیه کرده اید وارد کنید.
+                                         
+                                    </span>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>شماره تماس</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="tel" class="form-control " name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+
+                                <div class="col-12 mt-4">
+                                    <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
+                                        بازیابی رمزعبور
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <span class="center-content">
+                                       
+                                        <a class="text-link me-2 sans-Bold text-decoration size-5 logButton pointer">بازگشت</a>
+                                    </span>
+                                </div>
+                                
 
                             </form>
                         </div>
@@ -162,7 +200,8 @@
                     </nav>
                 </div>
                 <div class="col-2 d-flex justify-content-end">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#logRegModal" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#logRegModal"
+                        class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
                         <i class="bi bi-person size-2 ms-2"></i>
                         ثبت نام / ورود
                         <i class="bi bi-chevron-down size-4 me-2"></i>
@@ -226,7 +265,7 @@
                                 </div>
                             </div>
                             <div class="center-content mt-4">
-                                <button class="btn btn-red px-4 rounded-pill">شروع ثبت نام</button>
+                                <a href="lottery.html" class="btn btn-red px-4 rounded-pill">شروع ثبت نام</a>
                             </div>
                         </div>
                     </div>
@@ -260,7 +299,8 @@
                                     </div>
                                     <div class="col-12 mt-3">
                                         <div class="form-group ">
-                                            <label class="col-form-label size-5 text-lightGray"><span>تعداد فرزندان</span></label>
+                                            <label class="col-form-label size-5 text-lightGray"><span>تعداد
+                                                    فرزندان</span></label>
                                             <div class="col-12">
                                                 <input type="text" class="form-control" id="staticEmail">
                                             </div>
@@ -655,6 +695,83 @@
         </div>
     </main>
 
+    <footer class="footer pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-4">
+                    <div class="ft-title pb-3 mb-4">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">لینک‌های مهم</span>
+                    </div>
+                    <ul class="ft-links p-0 m-0">
+                        <li class="mb-2"><a href="/" class="text-light size-5">ثبت نام لاتاری</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">سوالات متداول</a></li>
+                        <li><a href="/" class="text-light size-5">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="ft-title pb-3 mb-4">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">آخرین مقالات</span>
+                    </div>
+                    <ul class="ft-links p-0 m-0">
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط شرکت در لاتاری گرین کارت آمریکا</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط سنی شرکت در لاتاری</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">مراحل شرکت در لاتاری گرین کارت آمریکا</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="col-4 d-flex flex-wrap">
+                    <div class="ft-title pb-3 mb-4 col-12">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">تماس با ما</span>
+                    </div>
+                    <div class="col-12 d-flex align-items-center contact-us footer-contect mb-3">
+                        <div class="icon">
+                            <span class="d-flex align-items-center justify-content-center p-3">
+                                <img src="assets/images/call-ic.png" />
+                            </span>
+                        </div>
+                        <div class="info pe-3 d-flex flex-column">
+                            <div class="d-flex w-100 justify-content-between mb-2">
+                                <span class="text-light size-5">پشتیبانی</span>
+                                <a href="/" class="FaNum text-light sans-Medium">021-44256</a>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <span class="text-light size-5">Whatsapp</span>
+                                <a href="/" class="FaNum text-light sans-Medium ">09121256987</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center contact-us footer-contect">
+                        <div class="icon">
+                            <span class="d-flex align-items-center justify-content-center p-3">
+                                <img src="assets/images/information-ic.png" />
+                            </span>
+                        </div>
+                        <div class="info pe-3 d-flex justify-content-between ">
+                            <a href="/" class="FaNum text-light sans-Medium size-5 ps-3">asanlottery@info.com</a>
+                            <ul class="d-flex justify-content-start p-0 m-0">
+                                <li class="ps-3"><a href="" class="text-light"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li class="ps-3"><a href="" class="text-light"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li><a href="" class="text-light"><i class="bi bi-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="col-12">
+                    <div class="copyRight pt-4 mt-5 d-flex justify-content-center">
+                        <p class="text-lightGray mb-0 size-5">
+                             تمامی حقوق برای وب سایت آسان لاتاری محفوظ است.
+                            <span class="px-3">© ۱۴۰۰ -۲۰۲۱</span>
+                            <a href="/" class="text-lightGray">www.asanlottery.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="assets/js/jquery.min.js"></script>
@@ -671,18 +788,28 @@
                 return false;
             });
 
-            $('#regButton').click(function (e) {
+            $('.regButton').click(function (e) {
                 $('#regForm').show();
                 $('#logForm').hide();
+                $('#forgetPassForm').hide();
                 $('#logRegTitle').text('ایجاد حساب کاربری');
-                
+
                 e.preventDefault();
                 return false;
             });
-            $('#logButton').click(function (e) {
+            $('.logButton').click(function (e) {
                 $('#logForm').show();
                 $('#regForm').hide();
+                $('#forgetPassForm').hide();
                 $('#logRegTitle').text('ورود به پنل کاربری');
+                e.preventDefault();
+                return false;
+            });
+            $('.forgetPassButton').click(function (e) {
+                $('#logForm').hide();
+                $('#regForm').hide();
+                $('#forgetPassForm').show();
+                $('#logRegTitle').text('بازیابی رمز عبور');
                 e.preventDefault();
                 return false;
             });
