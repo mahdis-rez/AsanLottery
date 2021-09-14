@@ -18,26 +18,34 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col">
-                    <nav class="navbar p-0">
-                        <div class="d-flex">
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
+                    <nav class="navbar navbar-mobile p-0">
+                        <div class="d-flex w-100 h-100 flex-lg-row flex-column">
+                            <a class="py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
                         </div>
-
+                        <div class="close-mobileMenu d-flex d-lg-none">
+                            <span class="d-block"><i class="bi bi-x h1 m-0 text-white"></i></span>
+                        </div>
                     </nav>
+                    <div class="open-mobileMenu d-block text-darkBlue d-lg-none">
+                        <span class="d-block"><i class="bi bi-list m-0"></i></span>
+                    </div>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
+                <div class="col-3 d-none d-lg-flex justify-content-end">
                     <button type="button" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
                         <i class="bi bi-person size-2 ms-2"></i>
                         ثبت نام / ورود
                         <i class="bi bi-chevron-down size-4 me-2"></i>
                     </button>
                 </div>
-                <div class="col-12 border-bottom my-3"></div>
-                <div class="col d-flex justify-content-start align-items-center">
+                <div class="col-9 d-lg-none d-flex justify-content-end logo">
+                    <a href="/" class="d-inline-block"><img src="assets/images/asanlottery_mainlogo.png" alt="" title=""/></a>
+                </div>
+                <div class="col-12 border-bottom my-3 "></div>
+                <div class="col d-flex  justify-content-start align-items-center">
                     <span class="support-icon ms-2"><i class="bi bi-headset size-2 text-gray"></i></span>
                     <span class="text-gray size-5">
                         چگونه می‌توانیم کمکتان کنیم ؟
@@ -46,12 +54,28 @@
                         <a href="/contact-us" class="text-decoration size-5">ارتباط با پشتیبانی</a>
                     </span>
                 </div>
-                <div class="col-2">
+                <div class="col-2 d-none d-lg-block">
                     <div class="logo d-flex justify-content-end">
                         <a href="#" class="center-content">
                             <img src="assets/images/asanlottery_mainlogo.png" alt="آسان لاتاری" title="Asan Lottery" />
                         </a>
                     </div>
+                </div>
+                <div class="fixedMobileNavbar justify-content-between">
+
+                    <a href="/" class="col-4 center-content flex-column item text-red">
+                        <i class="bi bi-house-door icon  mb-1"></i>
+                        <span class="size-6">خانه</span>
+                    </a>
+                    <a href="/" class="col-4 center-content flex-column item text-darkBlue">
+                        <i class="bi bi-file-earmark-text icon  mb-1"></i>
+                        <span class="size-6">ثبت نام لاتاری</span>
+                    </a>
+                    <a href="/" class="col-4 center-content flex-column item text-darkBlue">
+                        <i class="bi bi-person icon  mb-1"></i>
+                        <span class="size-6">پنل کاربری</span>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -60,10 +84,89 @@
     <main class="main py-3 container-fluid">
         <div class="py-5">
             <div class="container">
-                <div class="row align-items-center justify-content-center">
-                  
-                  
-                    <div class="col-5 form">
+                <div class="row align-items-center justify-content-center flex-row-reverse">
+
+                    <div class="col-12 col-lg-7 mb-5 mb-lg-0 desc pe-5">
+                        <div class="col-12 mb-4">
+                            <div class="main-title d-flex align-items-center justify-content-start">
+                                <div class="icon noBg ms-3"><img src="assets/images/about_ic.png" /></div>
+                                <div class="text d-flex align-items-center">
+                                    <h1 class="mb-0 d-flex flex-column">
+                                        <span class="text-red d-block h4 sans-bold mb-2">درباره ما</span>
+                                        <span class="text-darkBlue d-block m-0 h4 sans-Light">About Us </span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us text ps-3 mb-4">
+                            <p class="size-5 text-gray mb-0">
+                                ارز تو ارز در نظر دارد تا با ایجاد بستر امن معاملاتی‌ و پلتفرمی با رابط کاربری آسان،
+                                زمینه انجام تراکنش‌های نا‌محدود رمز ارزی را محیا کند. تیم ارز تو ارز در تلاش است تا با
+                                شفافیت در انتقال اطلاعات، حریم خصوصی کاربران خود را به طور جدی حفظ کرده و به عنوان
+                                امن‌ترین سامانه تبادل ارز‌های دیجیتال در ایران، رضایت کاربران خود را جلب کند. وجود
+                                مزایایی از قبیل حفظ امنیت دارایی‌های کاربران، امکان تبادل برترین رمز ارزهای دنیا، دسترسی
+                                سریع به سرمایه از طریق اپلیکیشن و وب سایت، امکان تبدیل دارایی‌ها به یکدیگر در بستری
+                                یکپارچه، محافظت از دارایی کاربران ایرانی در برابر تحریم‌های بین‌المللی و پشتیبانی 24
+                                ساعته، این کیف پول را از سایر کیف پول‌های موجود متمایز می‌سازد.
+                            </p>
+                        </div>
+                        <div class="contact-us  ps-3 d-flex flex-wrap">
+                            <div class="col-12 col-md-6 d-flex align-items-center contact-us ps-0 ps-md-2">
+                                <div class="icon">
+                                    <span class="d-flex align-items-center justify-content-center p-3">
+                                        <img src="assets/images/call-ic.png" />
+                                    </span>
+                                </div>
+                                <div class="info pe-3 d-flex flex-column">
+                                    <div class="d-flex w-100 justify-content-between mb-2">
+                                        <span class="text-gray size-5">پشتیبانی</span>
+                                        <a href="/" class="FaNum text-gray sans-Medium">021-44256</a>
+                                    </div>
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <span class="text-gray size-5">Whatsapp</span>
+                                        <a href="/" class="FaNum text-gray sans-Medium ">09121256987</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- <div class="col d-flex align-items-center">
+                                <div class="icon orange">
+                                    <span class="d-flex align-items-center justify-content-center p-3">
+                                        <img src="assets/images/information-ic.png" />
+                                    </span>
+                                </div>
+                                <div class="info pe-3 d-flex flex-column">
+                                    <a href="/" class="FaNum text-gray sans-Medium size-5 mb-2">asanlottery@info.com</a>
+                                    <ul class="d-flex justify-content-start p-0 col-12 m-0">
+                                        <li class="ps-3"><a href="" class="text-gray"><i
+                                                    class="bi bi-instagram"></i></a></li>
+                                        <li class="ps-3"><a href="" class="text-gray"><i class="bi bi-telegram"></i></a>
+                                        </li>
+                                        <li><a href="" class="text-gray"><i class="bi bi-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                            <div class="col-12 col-md-6 mt-3 mt-md-0 d-flex align-items-center contact-us pe-0 pe-md-2">
+                                <div class="icon orange">
+                                    <span class="d-flex align-items-center justify-content-center p-3">
+                                        <img src="assets/images/information-ic.png" />
+                                    </span>
+                                </div>
+                                <div class="info pe-3 d-flex justify-content-between flex-wrap">
+                                    <a href="/" class="FaNum text-gray sans-Medium size-5 ps-3">asanlottery@info.com</a>
+                                    <ul class="d-flex justify-content-start p-0 m-0">
+                                        <li class="ps-3"><a href="" class="text-gray"><i
+                                                    class="bi bi-instagram"></i></a></li>
+                                        <li class="ps-3"><a href="" class="text-gray"><i class="bi bi-telegram"></i></a>
+                                        </li>
+                                        <li><a href="" class="text-gray"><i class="bi bi-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 form">
                         <div class="main-form-box p-4">
                             <div class="title center-content flex-column pb-3 mb-4">
                                 <span class="text-darkBlue sans-Bold">ارسال پیام</span>
@@ -111,68 +214,91 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-7 desc pe-5">
-                        <div class="col-12 mb-4">
-                            <div class="main-title d-flex align-items-center justify-content-start">
-                                <div class="icon noBg ms-3"><img src="assets/images/about_ic.png" /></div>
-                                <div class="text d-flex align-items-center">
-                                    <h1 class="mb-0 d-flex flex-column">
-                                        <span class="text-red d-block h4 sans-bold mb-2">درباره ما</span>
-                                        <span class="text-darkBlue d-block m-0 h4 sans-Light">About Us </span>
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about-us text ps-3 mb-4">
-                            <p class="size-5 text-gray mb-0">
-                                ارز تو ارز در نظر دارد تا با ایجاد بستر امن معاملاتی‌ و پلتفرمی با رابط کاربری آسان،
-                                زمینه انجام تراکنش‌های نا‌محدود رمز ارزی را محیا کند. تیم ارز تو ارز در تلاش است تا با
-                                شفافیت در انتقال اطلاعات، حریم خصوصی کاربران خود را به طور جدی حفظ کرده و به عنوان
-                                امن‌ترین سامانه تبادل ارز‌های دیجیتال در ایران، رضایت کاربران خود را جلب کند. وجود
-                                مزایایی از قبیل حفظ امنیت دارایی‌های کاربران، امکان تبادل برترین رمز ارزهای دنیا، دسترسی
-                                سریع به سرمایه از طریق اپلیکیشن و وب سایت، امکان تبدیل دارایی‌ها به یکدیگر در بستری
-                                یکپارچه، محافظت از دارایی کاربران ایرانی در برابر تحریم‌های بین‌المللی و پشتیبانی 24
-                                ساعته، این کیف پول را از سایر کیف پول‌های موجود متمایز می‌سازد.
-                            </p>
-                        </div>
-                        <div class="contact-us  ps-3 d-flex flex-wrap">
-                            <div class="col-6 d-flex align-items-center">
-                                <div class="icon">
-                                    <span class="d-flex align-items-center justify-content-center p-3">
-                                        <img src="assets/images/call-ic.png" />
-                                    </span>
-                                </div>
-                                <div class="info pe-3 d-flex flex-column">
-                                    <a href="/" class="FaNum text-gray sans-Medium mb-2">021-44256</a>
-                                    <a href="/" class="FaNum text-gray sans-Medium ">09121256987</a>
-                                </div>
-                            </div>
-                            <div class="col-6 d-flex align-items-center">
-                                <div class="icon orange">
-                                    <span class="d-flex align-items-center justify-content-center p-3">
-                                        <img src="assets/images/information-ic.png" />
-                                    </span>
-                                </div>
-                                <div class="info pe-3 d-flex flex-column">
-                                    <a href="/" class="FaNum text-gray sans-Medium size-5 mb-2">asanlottery@info.com</a>
-                                    <ul class="d-flex justify-content-start p-0 col-12 m-0">
-                                        <li class="ps-3"><a href="" class="text-gray"><i
-                                                    class="bi bi-instagram"></i></a></li>
-                                        <li class="ps-3"><a href="" class="text-gray"><i class="bi bi-telegram"></i></a>
-                                        </li>
-                                        <li><a href="" class="text-gray"><i class="bi bi-whatsapp"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
         </div>
     </main>
 
+    <footer class="footer pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-4">
+                    <div class="ft-title pb-3 mb-4">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">لینک‌های مهم</span>
+                    </div>
+                    <ul class="ft-links p-0 m-0">
+                        <li class="mb-2"><a href="/" class="text-light size-5">ثبت نام لاتاری</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">سوالات متداول</a></li>
+                        <li><a href="/" class="text-light size-5">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="ft-title pb-3 mb-4">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">آخرین مقالات</span>
+                    </div>
+                    <ul class="ft-links p-0 m-0">
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط شرکت در لاتاری گرین کارت آمریکا</a>
+                        </li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط سنی شرکت در لاتاری</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">مراحل شرکت در لاتاری گرین کارت آمریکا</a>
+                        </li>
 
+                    </ul>
+                </div>
+                <div class="col-4 d-flex flex-wrap">
+                    <div class="ft-title pb-3 mb-4 col-12">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">تماس با ما</span>
+                    </div>
+                    <div class="col-12 d-flex align-items-center contact-us footer-contect mb-3">
+                        <div class="icon">
+                            <span class="d-flex align-items-center justify-content-center p-3">
+                                <img src="assets/images/call-ic.png" />
+                            </span>
+                        </div>
+                        <div class="info pe-3 d-flex flex-column">
+                            <div class="d-flex w-100 justify-content-between mb-2">
+                                <span class="text-light size-5">پشتیبانی</span>
+                                <a href="/" class="FaNum text-light sans-Medium">021-44256</a>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <span class="text-light size-5">Whatsapp</span>
+                                <a href="/" class="FaNum text-light sans-Medium ">09121256987</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center contact-us footer-contect">
+                        <div class="icon">
+                            <span class="d-flex align-items-center justify-content-center p-3">
+                                <img src="assets/images/information-ic.png" />
+                            </span>
+                        </div>
+                        <div class="info pe-3 d-flex justify-content-between ">
+                            <a href="/" class="FaNum text-light sans-Medium size-5 ps-3">asanlottery@info.com</a>
+                            <ul class="d-flex justify-content-start p-0 m-0">
+                                <li class="ps-3"><a href="" class="text-light"><i class="bi bi-instagram"></i></a></li>
+                                <li class="ps-3"><a href="" class="text-light"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li><a href="" class="text-light"><i class="bi bi-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="copyRight pt-4 mt-5 d-flex justify-content-center">
+                        <p class="text-lightGray mb-0 size-5">
+                            تمامی حقوق برای وب سایت آسان لاتاری محفوظ است.
+                            <span class="px-3">© ۱۴۰۰ -۲۰۲۱</span>
+                            <a href="/" class="text-lightGray">www.asanlottery.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

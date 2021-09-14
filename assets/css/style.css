@@ -648,6 +648,10 @@ select.form-control {
     background-position: center center;
 }
 
+.navbar a {
+    color: #70798E;
+}
+
 .green-card {
     background: rgb(0, 43, 110);
     background: linear-gradient(126deg, rgba(0, 43, 110, 1) 0%, rgba(0, 29, 74, 1) 100%);
@@ -1121,7 +1125,7 @@ select.form-control {
 }
 
 .uploadImage .img-boxes img {
-    height: 164px;
+    height: 173px;
 
 }
 
@@ -1266,7 +1270,7 @@ select.form-control {
     background-color: rgba(255, 255, 255, .11);
 }
 
-.contact-us.footer-contect .info {
+.contact-us .info {
     width: calc(100% - 50px);
 }
 
@@ -1348,4 +1352,64 @@ select.form-control {
     border-top: 1px solid #AFB7CB;
 }
 
-@media (max-width:991.98px) {}
+.fixedMobileNavbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 -2px 18px rgba(0, 0, 0, .15);
+    box-shadow: 0 -2px 18px rgba(0, 0, 0, .15);
+    padding: 10px 0;
+    z-index: 99;
+    border-radius: 20px 20px 0 0;
+    display: none;
+}
+
+.fixedMobileNavbar .item .icon {
+    font-size: 1.8rem;
+}
+
+@media (max-width:1199.98px) {}
+
+@media (max-width:991.98px) {
+    .fixedMobileNavbar {
+        display: flex;
+    }
+
+    .navbar-mobile {
+        position: fixed;
+        width: 300px;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background-color: #001638;
+        z-index: 99;
+        padding: 1rem 2rem !important;
+        
+        display: none !important;
+    }
+
+    .navbar-mobile a {
+        color: #e6e6e6;
+        display: block;
+        width: 100%;
+        margin: 0 !important;
+        padding-left: 0 !important;
+        position: relative;
+        margin-bottom: 0.5rem !important;
+    }
+    .close-mobileMenu{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .open-mobileMenu i{
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width:767.98px) {}
+
+@media (max-width:575.98px) {}
