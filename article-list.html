@@ -14,30 +14,217 @@
 </head>
 
 <body>
+    <div class="modal fade" id="logRegModal" tabindex="-1" aria-labelledby="logRegModalLabel" aria-hidden="true">
+        <div class="modal-dialog pt-5">
+            <div class="modal-content main-form-box overflow-hidden">
+                <div class="modal-body p-0 ">
+                    <div class="p-4">
+                        <div class="title center-content flex-column pb-3 mb-4 position-relative">
+                            <span class="text-darkBlue sans-Black" id="logRegTitle">ورود به پنل کاربری</span>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div>
+                            <form id="logForm" class="row logRegForm m-0" action="lottery-form.html">
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span> نام کاربری</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" id="staticEmail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="form-group">
+                                        <label class="col-form-label size-5 text-gray"><span>رمز عبور</span></label>
+                                        <div class="col-12 ">
+                                            <input type="password" class="form-control" id="staticEmail">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-start">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="sex" id="male">
+                                            <label class="form-check-label size-5 text-gray pointer" for="male">من را به
+                                                خاطر بسپار</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a
+                                            class="center-content text-link text-decoration size-5 forgetPassButton pointer">
+                                            فراموشی رمز عبور
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="center-content recaptch">
+                                        <img src="assets/images/Recaptcha+Image.jpg" height="" />
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
+                                        ورود
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <span class="center-content text-gray size-5">
+                                        کاربر جدید هستید؟
+                                        <a class="text-link me-2 sans-Bold text-decoration regButton pointer">ثبت
+                                            نام</a>
+                                    </span>
+                                </div>
+
+                            </form>
+                            <form id="regForm" class="row logRegForm m-0 regForm" action="lottery-form.html">
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>نام کاربری</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" name="userName" id="userName">
+                                            <!-- <small id="userNameHelp" class="text-red mt-1 text-start d-block size-6">لطفا انگلیسی وارد کنید</small> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>شماره تماس</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="tel" class="form-control " name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="form-group">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>رمز عبور</span>
+                                        </label>
+                                        <div class="col-12 ">
+                                            <input type="password" class="form-control" name="password" id="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <div class="form-group">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>تکرار رمز عبور</span>
+                                        </label>
+                                        <div class="col-12 ">
+                                            <input type="password" class="form-control" name="rePassword"
+                                                id="rePassword">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
+                                        ثبت نام
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <span class="center-content text-gray size-5">
+                                        از قبل ثبت نام کرده‌اید؟
+                                        <a class="text-link me-2 sans-Bold text-decoration logButton pointer">ورود</a>
+                                    </span>
+                                </div>
+
+                            </form>
+                            <form id="forgetPassForm" class="row logRegForm m-0 regForm" action="lottery-form.html">
+
+
+                                <div class="col-12 mt-3">
+                                    <span href="/" class="center-content text-gray size-6">
+                                        برای دسترسی به داشبورد خود ، لطفاً شماره تلفنی را که در طی مراحل ثبت نام تهیه
+                                        کرده اید وارد کنید.
+
+                                    </span>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <div class="form-group ">
+                                        <label class="col-form-label size-5 text-gray">
+                                            <span>شماره تماس</span>
+                                        </label>
+                                        <div class="col-12">
+                                            <input type="tel" class="form-control " name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 mt-4">
+                                    <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
+                                        بازیابی رمزعبور
+                                        <i class="bi bi-chevron-left size-4 me-2"></i>
+                                    </button>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <span class="center-content">
+
+                                        <a
+                                            class="text-link me-2 sans-Bold text-decoration size-5 logButton pointer">بازگشت</a>
+                                    </span>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <header class="header py-3 container-fluid">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col">
-                    <nav class="navbar p-0">
-                        <div class="d-flex">
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
+                <div class="col navbar-col">
+                    <nav class="navbar navbar-mobile p-0">
+                        <div class="d-flex w-100 h-100 flex-lg-row flex-column">
+                            <a class="py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
                         </div>
-
+                        <div class="close-mobileMenu d-flex d-lg-none">
+                            <span class="d-inline-block" id="closeMobile"><i
+                                    class="bi bi-x h1 m-0 text-white"></i></span>
+                        </div>
                     </nav>
+                    <div class="open-mobileMenu d-block text-darkBlue d-lg-none">
+                        <span class="d-inline-block" id="openMobile"><i class="bi bi-list m-0"></i></span>
+                    </div>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <button type="button" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
+                <div class="col-3 d-none d-lg-flex justify-content-end">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#logRegModal"
+                        class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
                         <i class="bi bi-person size-2 ms-2"></i>
                         ثبت نام / ورود
                         <i class="bi bi-chevron-down size-4 me-2"></i>
                     </button>
                 </div>
-                <div class="col-12 border-bottom my-3"></div>
-                <div class="col d-flex justify-content-start align-items-center">
+                <div class="col-9 d-lg-none d-flex justify-content-end logo">
+                    <a href="/" class="d-inline-block"><img src="assets/images/asanlottery_mainlogo.png" alt=""
+                            title="" /></a>
+                </div>
+                <div class="col-12 border-bottom my-3 "></div>
+                <div class="col d-flex  justify-content-start align-items-center">
                     <span class="support-icon ms-2"><i class="bi bi-headset size-2 text-gray"></i></span>
                     <span class="text-gray size-5">
                         چگونه می‌توانیم کمکتان کنیم ؟
@@ -46,22 +233,39 @@
                         <a href="/contact-us" class="text-decoration size-5">ارتباط با پشتیبانی</a>
                     </span>
                 </div>
-                <div class="col-2">
+                <div class="col-2 d-none d-lg-block">
                     <div class="logo d-flex justify-content-end">
                         <a href="#" class="center-content">
                             <img src="assets/images/asanlottery_mainlogo.png" alt="آسان لاتاری" title="Asan Lottery" />
                         </a>
                     </div>
                 </div>
+                <div class="fixedMobileNavbar justify-content-between">
+
+                    <a href="/" class="col-4 center-content flex-column item text-red">
+                        <i class="bi bi-house-door icon  mb-1"></i>
+                        <span class="size-6">خانه</span>
+                    </a>
+                    <a href="/" class="col-4 center-content flex-column item text-darkBlue">
+                        <i class="bi bi-file-earmark-text icon  mb-1"></i>
+                        <span class="size-6">ثبت نام لاتاری</span>
+                    </a>
+                    <a data-bs-toggle="modal" data-bs-target="#logRegModal"
+                        class="col-4 center-content flex-column item text-darkBlue">
+                        <i class="bi bi-person icon  mb-1"></i>
+                        <span class="size-6">پنل کاربری</span>
+                    </a>
+
+                </div>
             </div>
         </div>
     </header>
 
     <main class="main py-3 container-fluid">
-        <div class="py-5">
+        <div class="py-0 py-lg-4">
             <div class="container">
                 <div class="row align-items-start ">
-                    <div class="col-12 mb-5">
+                    <div class="col-12 mb-lg-5 mb-4">
                         <div class="main-title d-flex align-items-center justify-content-start">
                             <div class="icon ms-3"><img src="assets/images/lottery-ic-02.png" /></div>
                             <div class="text d-flex align-items-center">
@@ -72,9 +276,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9 col-12">
                         <div class="row">
-                            <article class="col-4 mb-4">
+                            <article class="col-lg-4 col-sm-6 mb-4">
                                 <figure class="card-article d-flex flex-wrap">
                                     <div class="image text-center col-12 p-2">
                                         <a class="d-inline-flex justify-content-center" href="article.html">
@@ -85,7 +289,7 @@
                                     </div>
                                     <div class="pt-2 px-3 pb-3">
                                         <a href="article.html">
-                                            <h2 class="text-darkBlue size-5 m-0">
+                                            <h2 class="text-darkBlue size-5 m-0 filter-text-line-3">
                                                 تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                             </h2>
                                         </a>
@@ -111,7 +315,7 @@
                                 </figure>
                             </article>
 
-                            <article class="col-4 mb-4">
+                            <article class="col-lg-4 col-sm-6 mb-4">
                                 <figure class="card-article d-flex flex-wrap">
                                     <div class="image col-12 p-2">
                                         <a class="d-flex" href="article.html">
@@ -122,7 +326,7 @@
                                     </div>
                                     <div class="pt-2 px-3 pb-3">
                                         <a href="article.html">
-                                            <h2 class="text-darkBlue size-5 m-0">
+                                            <h2 class="text-darkBlue size-5 m-0 filter-text-line-3">
                                                 تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                             </h2>
                                         </a>
@@ -148,7 +352,7 @@
                                 </figure>
                             </article>
 
-                            <article class="col-4 mb-4">
+                            <article class="col-lg-4 col-sm-6 mb-4">
                                 <figure class="card-article d-flex flex-wrap">
                                     <div class="image col-12 p-2">
                                         <a class="d-flex" href="article.html">
@@ -159,7 +363,7 @@
                                     </div>
                                     <div class="pt-2 px-3 pb-3">
                                         <a href="article.html">
-                                            <h2 class="text-darkBlue size-5 m-0">
+                                            <h2 class="text-darkBlue size-5 m-0 filter-text-line-3">
                                                 تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                             </h2>
                                         </a>
@@ -189,7 +393,7 @@
 
                         </div>
                     </div>
-                    <aside class="col-3 pe-0 d-flex flex-wrap">
+                    <aside class="col-lg-3 col-12 pe-lg-0 mt-4 mt-lg-0 d-flex flex-wrap">
 
                         <div class="col-12 p-0 aside">
                             <article class="mb-4">
@@ -228,7 +432,8 @@
                                     <span class="image"><a><img src="assets/images/art-test.png"> </a></span>
                                     <span class="desc d-flex flex-column justify-content-between">
                                         <h3 class="size-5 mb-1">
-                                            <a href="/" class="text-darkBlue filter-text-line-1">شرایط سنی شرکت در لاتاری</a>
+                                            <a href="/" class="text-darkBlue filter-text-line-1 text-end">شرایط سنی شرکت در
+                                                لاتاری</a>
                                         </h3>
                                         <span class="FaNum mt-1 text-lightGray text-start">۱۹ تیر ۱۴۰۰</span>
                                     </span>
@@ -237,7 +442,7 @@
                                     <span class="image"><a><img src="assets/images/art-test.png"> </a></span>
                                     <span class="desc d-flex flex-column justify-content-between">
                                         <h3 class="size-5 mb-1">
-                                            <a href="/" class="text-darkBlue">شرایط سنی شرکت در لاتاری</a>
+                                            <a href="/" class="text-darkBlue filter-text-line-1 text-end">شرایط سنی شرکت در لاتاری</a>
                                         </h3>
                                         <span class="FaNum mt-1 text-lightGray text-start">۱۹ تیر ۱۴۰۰</span>
                                     </span>
@@ -251,13 +456,143 @@
         </div>
     </main>
 
+    <footer class="footer pt-4 pt-md-5 px-4 px-md-0 pb-4 mt-0 mt-lg-5">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-md-0">
+                    <div class="ft-title pb-3 mb-4">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">لینک‌های مهم</span>
+                    </div>
+                    <ul class="ft-links p-0 m-0">
+                        <li class="mb-2"><a href="/" class="text-light size-5">ثبت نام لاتاری</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">سوالات متداول</a></li>
+                        <li><a href="/" class="text-light size-5">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 d-none d-lg-block">
+                    <div class="ft-title pb-3 mb-4">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">آخرین مقالات</span>
+                    </div>
+                    <ul class="ft-links p-0 m-0">
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط شرکت در لاتاری گرین کارت آمریکا</a>
+                        </li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط سنی شرکت در لاتاری</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">مراحل شرکت در لاتاری گرین کارت آمریکا</a>
+                        </li>
 
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex flex-wrap">
+                    <div class="ft-title pb-3 mb-4 col-12">
+                        <span class="text-lightBlue mb-0 sans-Bold size-4">تماس با ما</span>
+                    </div>
+                    <div class="col-12 d-flex align-items-center contact-us footer-contect mb-3">
+                        <div class="icon">
+                            <span class="d-flex align-items-center justify-content-center p-3">
+                                <img src="assets/images/call-ic.png" />
+                            </span>
+                        </div>
+                        <div class="info pe-3 d-flex flex-column">
+                            <div class="d-flex w-100 justify-content-between mb-2">
+                                <span class="text-light size-5">پشتیبانی</span>
+                                <a href="/" class="FaNum text-light sans-Medium">021-44256</a>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <span class="text-light size-5">Whatsapp</span>
+                                <a href="/" class="FaNum text-light sans-Medium ">09121256987</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center contact-us footer-contect">
+                        <div class="icon">
+                            <span class="d-flex align-items-center justify-content-center p-3">
+                                <img src="assets/images/information-ic.png" />
+                            </span>
+                        </div>
+                        <div class="info pe-3 d-flex justify-content-between ">
+                            <a href="/" class="FaNum text-light sans-Medium size-5 ps-3">asanlottery@info.com</a>
+                            <ul class="d-flex justify-content-start p-0 m-0">
+                                <li class="ps-3"><a href="" class="text-light"><i class="bi bi-instagram"></i></a></li>
+                                <li class="ps-3"><a href="" class="text-light"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li><a href="" class="text-light"><i class="bi bi-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="copyRight pt-4 mt-5 d-flex justify-content-center">
+                        <p class="text-lightGray mb-0 text-center">
+                            تمامی حقوق برای وب سایت آسان لاتاری محفوظ است.
+                            <span class="px-2 px-md-3">© ۱۴۰۰ -۲۰۲۱</span>
+                            <a href="/" class="text-lightGray">www.asanlottery.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // loginRegister
+            $('.regButton').click(function (e) {
+                $('#regForm').show();
+                $('#logForm').hide();
+                $('#forgetPassForm').hide();
+                $('#logRegTitle').text('ایجاد حساب کاربری');
 
+                e.preventDefault();
+                return false;
+            });
+            $('.logButton').click(function (e) {
+                $('#logForm').show();
+                $('#regForm').hide();
+                $('#forgetPassForm').hide();
+                $('#logRegTitle').text('ورود به پنل کاربری');
+                e.preventDefault();
+                return false;
+            });
+            $('.forgetPassButton').click(function (e) {
+                $('#logForm').hide();
+                $('#regForm').hide();
+                $('#forgetPassForm').show();
+                $('#logRegTitle').text('بازیابی رمز عبور');
+                e.preventDefault();
+                return false;
+            });
+            // end loginRegister
+        });
+
+        // header js
+        $(function () {
+            $('#openMobile').click(function (e) {
+                $(this).parents('.navbar-col').find('.navbar-mobile').addClass('open');
+                e.preventDefault();
+                return false;
+            });
+
+            $('#closeMobile').click(function (e) {
+                $(this).parents('.navbar-mobile').removeClass('open');
+                e.preventDefault();
+                return false;
+            });
+        });
+        $(document).on('click', function (e) {
+            if ($(e.target).closest(".navbar-mobile").length === 0) {
+                $(".navbar-mobile").removeClass('open');
+            }
+        });
+        // end header js
+
+
+    </script>
 </body>
 
 </html>

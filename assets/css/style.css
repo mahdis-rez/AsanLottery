@@ -34,7 +34,9 @@ a {
 a:hover {
     color: #0057c3;
 }
-
+.text-justify{
+    text-align: justify;
+}
 .text-decoration {
     text-decoration: underline;
 }
@@ -117,6 +119,14 @@ p {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     text-align: justify;
+}
+
+.filter-text-line-3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .filter-text-line-4 {
@@ -1302,16 +1312,16 @@ select.form-control {
     display: none;
 }
 
-.faq-category {
+.faq-category ul{
     list-style-type: none;
 }
 
-.faq-category li {
+.faq-category ul li {
     color: #6176A8;
     transition: all 0.3s ease-in;
 }
 
-.faq-category li:hover {
+.faq-category ul li:hover {
     color: #0072FF;
 }
 
@@ -1386,9 +1396,10 @@ select.form-control {
 @media (max-width:1199.98px) {}
 
 @media (max-width:991.98px) {
-    .main-banner{
+    .main-banner {
         padding: 30px;
     }
+
     .fixedMobileNavbar {
         display: flex;
     }
@@ -1442,14 +1453,45 @@ select.form-control {
 
     .copyRight p {
         font-size: 0.75rem;
+    }
 
+    .news-row .image {
+        flex: 0 0 15%;
+        max-width: 15%;
+    }
+
+    .news-row .desc {
+        flex: 0 0 85%;
+        max-width: 85%;
+    }
+
+    .main-title .icon {
+        flex: 0 0 60px;
+        max-width: 60px;
+        height: 60px;
+    }
+
+    .main-title .icon img {
+        width: 33px;
+    }
+
+}
+
+@media (max-width:767.98px) {
+    .faq-category-title {
+        width: 100%;
+        display: block;
+        margin-bottom: 0.7rem;
+    }
+
+    .faq-category {
+        padding-bottom: 1.5rem;
+        overflow-x: scroll;
+    }
+
+    .faq-category ul {
+        width: 550px;
     }
 }
 
-@media (max-width:767.98px) {}
-
-@media (max-width:575.98px) {
-    .size-3 {
-        /* font-size:1rem; */
-    }
-}
+@media (max-width:575.98px) {}
