@@ -147,37 +147,37 @@ p {
 
 /* font size */
 .size-1 {
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.7;
 }
 
 .size-2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.7;
 }
 
 .size-3 {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.7;
 }
 
 .size-4 {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
 }
 
 .size-5 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.7;
 }
 
 .size-6 {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.7;
 }
 
 .size-7 {
-    font-size: 10px;
+    font-size: 0.625rem;
     line-height: 1.7;
 }
 
@@ -1352,6 +1352,11 @@ select.form-control {
     border-top: 1px solid #AFB7CB;
 }
 
+.copyRight p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
 .fixedMobileNavbar {
     position: fixed;
     bottom: 0;
@@ -1371,24 +1376,43 @@ select.form-control {
     font-size: 1.8rem;
 }
 
+.modal-dialog .btn-close {
+    position: absolute;
+    left: 0;
+
+    z-index: 9;
+}
+
 @media (max-width:1199.98px) {}
 
 @media (max-width:991.98px) {
+    .main-banner{
+        padding: 30px;
+    }
     .fixedMobileNavbar {
         display: flex;
     }
 
     .navbar-mobile {
         position: fixed;
-        width: 300px;
-        right: 0;
+        width: 250px;
+        right: -300px;
         top: 0;
         height: 100%;
         background-color: #001638;
         z-index: 99;
+        border-radius: 10px 0 0 0;
         padding: 1rem 2rem !important;
-        
-        display: none !important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+    }
+
+    .navbar-mobile.open {
+        right: 0;
     }
 
     .navbar-mobile a {
@@ -1400,16 +1424,32 @@ select.form-control {
         position: relative;
         margin-bottom: 0.5rem !important;
     }
-    .close-mobileMenu{
+
+    .close-mobileMenu {
         position: absolute;
         top: 15px;
         left: 15px;
     }
-    .open-mobileMenu i{
+
+    .open-mobileMenu i {
         font-size: 2.6rem;
+    }
+
+    .footer {
+        padding-bottom: 6rem !important;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .copyRight p {
+        font-size: 0.75rem;
+
     }
 }
 
 @media (max-width:767.98px) {}
 
-@media (max-width:575.98px) {}
+@media (max-width:575.98px) {
+    .size-3 {
+        /* font-size:1rem; */
+    }
+}

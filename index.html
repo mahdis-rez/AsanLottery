@@ -15,12 +15,15 @@
 
 <body>
     <div class="modal fade" id="logRegModal" tabindex="-1" aria-labelledby="logRegModalLabel" aria-hidden="true">
-        <div class="modal-dialog mt-5 pt-5">
+        <div class="modal-dialog pt-5">
             <div class="modal-content main-form-box overflow-hidden">
                 <div class="modal-body p-0 ">
                     <div class="p-4">
-                        <div class="title center-content flex-column pb-3 mb-4">
+                        <div class="title center-content flex-column pb-3 mb-4 position-relative">
                             <span class="text-darkBlue sans-Black" id="logRegTitle">ورود به پنل کاربری</span>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                         </div>
                         <div>
                             <form id="logForm" class="row logRegForm m-0" action="lottery-form.html">
@@ -52,7 +55,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <a class="center-content text-link text-decoration size-5 forgetPassButton pointer">
+                                        <a
+                                            class="center-content text-link text-decoration size-5 forgetPassButton pointer">
                                             فراموشی رمز عبور
                                         </a>
                                     </div>
@@ -144,8 +148,9 @@
 
                                 <div class="col-12 mt-3">
                                     <span href="/" class="center-content text-gray size-6">
-                                        برای دسترسی به داشبورد خود ، لطفاً شماره تلفنی را که در طی مراحل ثبت نام تهیه کرده اید وارد کنید.
-                                         
+                                        برای دسترسی به داشبورد خود ، لطفاً شماره تلفنی را که در طی مراحل ثبت نام تهیه
+                                        کرده اید وارد کنید.
+
                                     </span>
                                 </div>
 
@@ -159,7 +164,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                  
+
 
                                 <div class="col-12 mt-4">
                                     <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue sans-Bold">
@@ -169,11 +174,12 @@
                                 </div>
                                 <div class="col-12 mt-3">
                                     <span class="center-content">
-                                       
-                                        <a class="text-link me-2 sans-Bold text-decoration size-5 logButton pointer">بازگشت</a>
+
+                                        <a
+                                            class="text-link me-2 sans-Bold text-decoration size-5 logButton pointer">بازگشت</a>
                                     </span>
                                 </div>
-                                
+
 
                             </form>
                         </div>
@@ -187,19 +193,25 @@
     <header class="header py-3 container-fluid">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col">
-                    <nav class="navbar p-0">
-                        <div class="d-flex">
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
-                            <a class="text-gray py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
+                <div class="col navbar-col">
+                    <nav class="navbar navbar-mobile p-0">
+                        <div class="d-flex w-100 h-100 flex-lg-row flex-column">
+                            <a class="py-2 ps-4 ms-4 size-4" href="index.html">خانه</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="lottery.html">ثبت نام لاتاری</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="article-list.html">وبلاگ</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="faq.html">سوالات متداول</a>
+                            <a class="py-2 ps-4 ms-4 size-4" href="contact-us.html">ارتباط با ما</a>
                         </div>
-
+                        <div class="close-mobileMenu d-flex d-lg-none">
+                            <span class="d-inline-block" id="closeMobile"><i
+                                    class="bi bi-x h1 m-0 text-white"></i></span>
+                        </div>
                     </nav>
+                    <div class="open-mobileMenu d-block text-darkBlue d-lg-none">
+                        <span class="d-inline-block" id="openMobile"><i class="bi bi-list m-0"></i></span>
+                    </div>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
+                <div class="col-3 d-none d-lg-flex justify-content-end">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#logRegModal"
                         class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
                         <i class="bi bi-person size-2 ms-2"></i>
@@ -207,8 +219,12 @@
                         <i class="bi bi-chevron-down size-4 me-2"></i>
                     </button>
                 </div>
-                <div class="col-12 border-bottom my-3"></div>
-                <div class="col d-flex justify-content-start align-items-center">
+                <div class="col-9 d-lg-none d-flex justify-content-end logo">
+                    <a href="/" class="d-inline-block"><img src="assets/images/asanlottery_mainlogo.png" alt=""
+                            title="" /></a>
+                </div>
+                <div class="col-12 border-bottom my-3 "></div>
+                <div class="col d-flex  justify-content-start align-items-center">
                     <span class="support-icon ms-2"><i class="bi bi-headset size-2 text-gray"></i></span>
                     <span class="text-gray size-5">
                         چگونه می‌توانیم کمکتان کنیم ؟
@@ -217,12 +233,29 @@
                         <a href="/contact-us" class="text-decoration size-5">ارتباط با پشتیبانی</a>
                     </span>
                 </div>
-                <div class="col-2">
+                <div class="col-2 d-none d-lg-block">
                     <div class="logo d-flex justify-content-end">
                         <a href="#" class="center-content">
                             <img src="assets/images/asanlottery_mainlogo.png" alt="آسان لاتاری" title="Asan Lottery" />
                         </a>
                     </div>
+                </div>
+                <div class="fixedMobileNavbar justify-content-between">
+
+                    <a href="/" class="col-4 center-content flex-column item text-red">
+                        <i class="bi bi-house-door icon  mb-1"></i>
+                        <span class="size-6">خانه</span>
+                    </a>
+                    <a href="/" class="col-4 center-content flex-column item text-darkBlue">
+                        <i class="bi bi-file-earmark-text icon  mb-1"></i>
+                        <span class="size-6">ثبت نام لاتاری</span>
+                    </a>
+                    <a data-bs-toggle="modal" data-bs-target="#logRegModal"
+                        class="col-4 center-content flex-column item text-darkBlue">
+                        <i class="bi bi-person icon  mb-1"></i>
+                        <span class="size-6">پنل کاربری</span>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -231,18 +264,20 @@
     <main class="main py-3 container-fluid">
         <div class=" mb-5">
             <div class="container">
-                <div class="main-banner col-12 d-flex align-items-center">
-                    <div class="col-6 px-4">
-                        <div class="col-10 title text-white">
-                            <h1 class="sans-Black">لاتاری گرین کارت آمریکا</h1>
-                            <h2 class="sans-Medium h4 mt-4"> برترین روش مهاجرتی در تمام دنیا</h2>
+                <div class="main-banner col-12 d-flex align-items-center flex-wrap">
+                    <div class="col-12 col-lg-6 ps-0 ps-lg-4">
+                        <div class="col-12 title text-white">
+                            <h1 class="sans-Black text-center text-lg-end">لاتاری گرین کارت آمریکا</h1>
+                            <h2 class="sans-Medium h4 mt-4 text-center text-lg-end"> برترین روش مهاجرتی در تمام دنیا
+                            </h2>
                         </div>
-                        <div class="col-10 mt-4">
-                            <p class="text-lightGray size-5">برای ثبت نام لاتاری 2023 در سایت آسان لاتاری ثبت نام کرده و
+                        <div class="col-12 col-lg-10 mt-4 d-none d-lg-block">
+                            <p class="text-lightGray size-5 ">برای ثبت نام لاتاری 2023 در سایت آسان لاتاری ثبت نام کرده
+                                و
                                 سپس
                                 از قسمت پنل کاربری خود فرم مربوط به ثبت نام را پر کنید</p>
                         </div>
-                        <div class="col-10 coundown mt-5">
+                        <div class="col-12 col-lg-10 coundown mt-5">
                             <h3 class="text-lightGray size-5 mb-3 text-center">مدت زمان باقی‌مانده تا شروع ثبت‌ نام
                                 لاتاری
                             </h3>
@@ -264,55 +299,76 @@
                                     <span class="text-lightGray size-5">ثانیه</span>
                                 </div>
                             </div>
-                            <div class="center-content mt-4">
+                            <div class=" mt-4 d-flex d-lg-flex justify-content-center align-items-center">
                                 <a href="lottery.html" class="btn btn-red px-4 rounded-pill">شروع ثبت نام</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 mt-5 mt-lg-0">
                         <div class="main-form-box p-4">
                             <div class="title center-content flex-column pb-3 mb-4">
                                 <span class="text-darkBlue sans-Bold">محاسبه هزینه پرداختی</span>
                             </div>
                             <div>
-                                <form class="row center-content" action="">
+                                <form class="row center-content m-0" action="lottery-form.html" method="POST">
                                     <div class="col-5">
                                         <div class="form-control-custome center-content">
-                                            <div class="form-check">
-                                                <input type="radio" class="form-check-input" name="sa"
-                                                    id="exampleCheck1">
-                                                <label class="form-check-label size-5 text-gray"
-                                                    for="exampleCheck1">مجرد</label>
+                                            <div class="form-check" onclick="showTwoChance()">
+                                                <input type="radio" class="form-check-input" name="marital" id="single">
+                                                <label class="form-check-label size-5 text-gray pointer"
+                                                    for="single">مجرد</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-5">
                                         <div class="form-control-custome center-content">
-                                            <div class="form-check">
-                                                <input type="radio" class="form-check-input" name="sa"
-                                                    id="exampleCheck2">
-                                                <label class="form-check-label size-5 text-gray"
-                                                    for="exampleCheck2">متاهل</label>
+                                            <div class="form-check" onclick="showTwoChance()">
+                                                <input type="radio" class="form-check-input" name="marital" id="married"
+                                                    checked>
+                                                <label class="form-check-label size-5 text-gray pointer"
+                                                    for="married">متاهل</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 mt-3">
                                         <div class="form-group ">
-                                            <label class="col-form-label size-5 text-lightGray"><span>تعداد
-                                                    فرزندان</span></label>
+                                            <label class="col-form-label size-5 text-lightGray">
+                                                <span>تعداد فرزندان
+                                                    <span class="size-6 me-1">(زیر <span class="FaNum">21</span> سال
+                                                        و ازدواج نکرده)</span>
+                                                </span>
+                                            </label>
                                             <div class="col-12">
-                                                <input type="text" class="form-control" id="staticEmail">
+                                                <select class="form-control FaNum" id="exampleFormControlSelect1">
+                                                    <option>بدون فرزند</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 mt-3">
-                                        <div class="d-flex align-items-center">
+                                    <div class="col-12 mt-3 twoChance" id="twoChance">
+                                        <div class="d-flex align-items-center flex-wrap">
                                             <div class="form-check d-flex align-items-center">
                                                 <input type="radio" class="ms-2 form-check-input" name="sasa"
                                                     id="exampleCheck3">
                                                 <label class="form-check-label text-gray" for="exampleCheck3">ثبت نام ۲
                                                     شانسه</label>
+                                            </div>
+                                            <div class="info-box mt-3 box-priamry">
+                                                <p class="size-7 text-justify mb-0"> این گزینه فقط برای متاهلین
+                                                    فعال میباشد. متاهلین میتوانند دو مرتبه ثبت نام کنند. یک بار
+                                                    اقا به عنوان متقاضی اصلی و یک بار خانم به عنوان متقاضی اصلی.
+                                                    هر یک از زوجین در این برنامه انتخاب شوند، کل خانواده برای
+                                                    مصاحبه به سفارت دعوت میشوند</p>
                                             </div>
                                         </div>
                                     </div>
@@ -324,9 +380,11 @@
                                         </p>
                                     </div>
                                     <div class="col-12 mt-4">
-                                        <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue">شروع ثبت
+                                        <button class="btn w-100 rounded-5 py-2 center-content btn-lightBlue">شروع
+                                            ثبت
                                             نام<i class="bi bi-chevron-left size-4 me-2"></i></button>
                                     </div>
+
                                 </form>
                             </div>
                         </div>
@@ -349,7 +407,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
                         <div class="advantages">
                             <div
                                 class="green-card d-flex flex-column justify-content-between align-items-center text-white">
@@ -358,10 +416,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <h3 class="d-flex mb-3 align-items-center">
-                            <p class="text-darkBlue size-3 mb-0 sans-Bold">مزایای داشتن گرین کارت آمریکا</p>
-                            <span class="img mb-0"> <img src="assets/images/afterTitle.png" /></span>
+                            <p class="text-darkBlue size-3 mb-0 sans-Bold col-5 col-sm-4 col-xl-3">
+                                مزایای داشتن</br>
+                                گرین کارت آمریکا
+                            </p>
+                            <span class="img mb-0 col-7 col-sm-8 col-xl-9"> <img
+                                    src="assets/images/afterTitle.png" /></span>
                         </h3>
                         <p class="size-5 text-gray">
                             کسانی که گرین کارت دارند به عنوان یک مقیم دائمی آمریکا شناخته می شوند. در صورتی که شما گرین
@@ -369,7 +431,7 @@
                             50 ایالت آمریکا زندگی کنید. شما شامل حال تمام مزایا و قوانین آمریکا خواهید. تنها نمی توانید
                             رای بدهید. شما می توانید بعد از اقامت به مدت 5 سال در آمریکا درخواست شهروندی آمریکا را بدهید
                         </p>
-                        <ul class="text-gray ">
+                        <ul class="text-gray p-0 pe-3">
                             <li class="mb-2 size-5">به طور قانونی یک مقیم آمریکا حساب می شوید</li>
                             <li class="mb-2 size-5">می توانید برای هر نوعی شغل در آمریکا حتی شغل های دولتی درخواست کار
                                 کنید</li>
@@ -388,10 +450,10 @@
             </div>
         </div>
 
-        <div class="mt-5 py-5">
+        <div class="mt-0 mt-lg-5 py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <div class="col-12 col-xl-4 mb-5 mb-xl-0">
                         <div class="main-title d-flex align-items-center justify-content-start">
                             <div class="icon ms-3"><img src="assets/images/win-lottery.png" /></div>
                             <div class="text d-flex align-items-center">
@@ -402,7 +464,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 win-col">
+                    <div class="col-xl-2 col-md-3 col-6 mb-4 mb-md-0 win-col">
                         <div class="win-card center-content flex-column">
                             <span class="img center-content ">
                                 <img src="assets/images/level-1.png" alt="s" title="s" />
@@ -412,7 +474,7 @@
                                 سایت آسان لاتاری می‌باشد</p>
                         </div>
                     </div>
-                    <div class="col-2 win-col">
+                    <div class="col-xl-2 col-md-3 col-6 mb-4 mb-md-0 win-col">
                         <div class="win-card center-content flex-column">
                             <span class="img center-content ">
                                 <img src="assets/images/level-2.png" alt="s" title="s" />
@@ -422,7 +484,7 @@
                                 سایت آسان لاتاری می‌باشد</p>
                         </div>
                     </div>
-                    <div class="col-2 win-col">
+                    <div class="col-xl-2 col-md-3 col-6 mb-4 mb-md-0 win-col">
                         <div class="win-card center-content flex-column">
                             <span class="img center-content ">
                                 <img src="assets/images/level-3.png" alt="s" title="s" />
@@ -432,7 +494,7 @@
                                 سایت آسان لاتاری می‌باشد</p>
                         </div>
                     </div>
-                    <div class="col-2 win-col">
+                    <div class="col-xl-2 col-md-3 col-6 mb-4 mb-md-0 win-col">
                         <div class="win-card center-content flex-column">
                             <span class="img center-content ">
                                 <img src="assets/images/level-4.png" alt="s" title="s" />
@@ -449,7 +511,7 @@
             </div>
         </div>
 
-        <div class="mt-5 py-5">
+        <div class="mt-0 mt-lg-5 py-5">
             <div class="container">
                 <div class="row align-items-center ">
                     <div class="col-12 mb-5">
@@ -463,10 +525,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card-article d-flex flex-wrap">
-                            <div class="image col-12 p-2">
-                                <a class="d-flex" href="article.html">
+
+                    <article class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <figure class="card-article d-flex flex-wrap">
+                            <div class="image text-center col-12 p-2">
+                                <a class="d-inline-flex justify-content-center" href="article.html">
                                     <img src="assets/images/art-test.png" alt="" />
                                     <span class="center-content sans-Black FaNum"><i
                                             class="bi bi-eye ms-1 size-3"></i>236</span>
@@ -478,10 +541,11 @@
                                         تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                     </h2>
                                 </a>
-                                <p class="mt-3 text-gray filter-text-line-4 text">در صورتی که شهروند آمریکا شده اند،
+                                <figcaption class="mt-3 text-gray filter-text-line-4 text mb-3">در صورتی که شهروند
+                                    آمریکا شده اند،
                                     بلافاصله می توانید برای همسر خودتان درخواست گرین کارت کنید. ولی اگر شهروند آمریکا
                                     نیستید و تنها گرین کارت دارید، همسرتان باید در جلسه مصاحبه حاضر شود. پس از تایید،
-                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</p>
+                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</figcaption>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="size-6 d-flex align-items-center text-lightGray"><i
                                             class="bi bi-person size-4 ms-1"></i>
@@ -494,13 +558,12 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="card-article d-flex flex-wrap">
-                            <div class="image col-12 p-2">
-                                <a class="d-flex" href="article.html">
+                        </figure>
+                    </article>
+                    <article class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <figure class="card-article d-flex flex-wrap">
+                            <div class="image text-center col-12 p-2">
+                                <a class="d-inline-flex justify-content-center" href="article.html">
                                     <img src="assets/images/art-test.png" alt="" />
                                     <span class="center-content sans-Black FaNum"><i
                                             class="bi bi-eye ms-1 size-3"></i>236</span>
@@ -512,10 +575,11 @@
                                         تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                     </h2>
                                 </a>
-                                <p class="mt-3 text-gray filter-text-line-4 text">در صورتی که شهروند آمریکا شده اند،
+                                <figcaption class="mt-3 text-gray filter-text-line-4 text mb-3">در صورتی که شهروند
+                                    آمریکا شده اند،
                                     بلافاصله می توانید برای همسر خودتان درخواست گرین کارت کنید. ولی اگر شهروند آمریکا
                                     نیستید و تنها گرین کارت دارید، همسرتان باید در جلسه مصاحبه حاضر شود. پس از تایید،
-                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</p>
+                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</figcaption>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="size-6 d-flex align-items-center text-lightGray"><i
                                             class="bi bi-person size-4 ms-1"></i>
@@ -528,13 +592,12 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="card-article d-flex flex-wrap">
-                            <div class="image col-12 p-2">
-                                <a class="d-flex" href="article.html">
+                        </figure>
+                    </article>
+                    <article class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <figure class="card-article d-flex flex-wrap">
+                            <div class="image text-center col-12 p-2">
+                                <a class="d-inline-flex justify-content-center" href="article.html">
                                     <img src="assets/images/art-test.png" alt="" />
                                     <span class="center-content sans-Black FaNum"><i
                                             class="bi bi-eye ms-1 size-3"></i>236</span>
@@ -546,10 +609,11 @@
                                         تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                     </h2>
                                 </a>
-                                <p class="mt-3 text-gray filter-text-line-4 text">در صورتی که شهروند آمریکا شده اند،
+                                <figcaption class="mt-3 text-gray filter-text-line-4 text mb-3">در صورتی که شهروند
+                                    آمریکا شده اند،
                                     بلافاصله می توانید برای همسر خودتان درخواست گرین کارت کنید. ولی اگر شهروند آمریکا
                                     نیستید و تنها گرین کارت دارید، همسرتان باید در جلسه مصاحبه حاضر شود. پس از تایید،
-                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</p>
+                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</figcaption>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="size-6 d-flex align-items-center text-lightGray"><i
                                             class="bi bi-person size-4 ms-1"></i>
@@ -562,13 +626,12 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="card-article d-flex flex-wrap">
-                            <div class="image col-12 p-2">
-                                <a class="d-flex" href="article.html">
+                        </figure>
+                    </article>
+                    <article class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <figure class="card-article d-flex flex-wrap">
+                            <div class="image text-center col-12 p-2">
+                                <a class="d-inline-flex justify-content-center" href="article.html">
                                     <img src="assets/images/art-test.png" alt="" />
                                     <span class="center-content sans-Black FaNum"><i
                                             class="bi bi-eye ms-1 size-3"></i>236</span>
@@ -580,10 +643,11 @@
                                         تفاوت افرادی شهروند آمریکا شده اند با افرادی که گرین کارت دارند چیست؟
                                     </h2>
                                 </a>
-                                <p class="mt-3 text-gray filter-text-line-4 text">در صورتی که شهروند آمریکا شده اند،
+                                <figcaption class="mt-3 text-gray filter-text-line-4 text mb-3">در صورتی که شهروند
+                                    آمریکا شده اند،
                                     بلافاصله می توانید برای همسر خودتان درخواست گرین کارت کنید. ولی اگر شهروند آمریکا
                                     نیستید و تنها گرین کارت دارید، همسرتان باید در جلسه مصاحبه حاضر شود. پس از تایید،
-                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</p>
+                                    باید در صف انتظار دریافت گرین کارت منتظر باشد.</figcaption>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="size-6 d-flex align-items-center text-lightGray"><i
                                             class="bi bi-person size-4 ms-1"></i>
@@ -596,10 +660,9 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="col-12 mt-5 center-content">
+                        </figure>
+                    </article>
+                    <div class="col-12 mt-3 mt-lg-5 center-content">
                         <button type="button" class="btn size-5 btn-outline-darkBlue rounded-5 center-content">
                             مشاهده همه مقالات
                             <i class="bi bi-chevron-left size-4 me-2"></i>
@@ -608,10 +671,10 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 py-5">
+        <div class="mt-0 mt-lg-5 py-5">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-6 mb-5">
+                    <div class="col-lg-6 col-12 mb-5">
                         <div class="main-title center-content">
                             <div class="icon ms-3"><img src="assets/images/lottery-ic-03.png" /></div>
                             <div class="text d-flex align-items-center">
@@ -662,7 +725,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mt-5 center-content">
+                    <div class="col-12 mt-3 mt-lg-5  center-content">
 
                         <button type="button" class="btn size-5 btn-outline-red rounded-5 center-content">
                             مشاهده همه پرسش‌‌های متداول
@@ -674,11 +737,11 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 py-5">
+        <div class="mt-0 mt-lg-5 py-5">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
-                    <div class="ContactBox align-items-center d-flex p-5 col-lg-9">
-                        <div class="col-8 d-flex align-items-center  ">
+                    <div class="ContactBox align-items-center d-flex flex-wrap p-md-5 p-4 col-lg-9">
+                        <div class="col-md-8 col-12 d-flex align-items-center  ">
                             <span class="support-icon ms-2"><i class="bi bi-headset size-2 text-gray"></i></span>
                             <div class="desc px-md-4 px-2 text-white">
                                 <h3 class=" mb-3 h3 font-weight-bold">با ما آنلاین در ارتباط باشید</h3>
@@ -686,8 +749,8 @@
                                     راحتی از طریق پشتیبانی آنلاین وب سایت باما در اتباط باشید</p>
                             </div>
                         </div>
-                        <div class=" col-4 d-flex justify-content-end"><a
-                                class="btn btn-lightBlue px-5 font-weight-bold btn-md py-2 rounded-5"
+                        <div class=" col-md-4 col-12 mt-4 mt-md-0 d-flex justify-content-md-end justify-content-center">
+                            <a class="btn btn-lightBlue px-5 font-weight-bold btn-md py-2 rounded-5"
                                 href="/contact-us">ارتباط با ما </a></div>
                     </div>
                 </div>
@@ -695,10 +758,10 @@
         </div>
     </main>
 
-    <footer class="footer pt-5 pb-4 mt-5">
+    <footer class="footer pt-4 pt-md-5 px-4 px-md-0 pb-4 mt-0 mt-lg-5">
         <div class="container">
             <div class="row align-items-start justify-content-between">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-md-0">
                     <div class="ft-title pb-3 mb-4">
                         <span class="text-lightBlue mb-0 sans-Bold size-4">لینک‌های مهم</span>
                     </div>
@@ -708,18 +771,20 @@
                         <li><a href="/" class="text-light size-5">درباره ما</a></li>
                     </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-4 d-none d-lg-block">
                     <div class="ft-title pb-3 mb-4">
                         <span class="text-lightBlue mb-0 sans-Bold size-4">آخرین مقالات</span>
                     </div>
                     <ul class="ft-links p-0 m-0">
-                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط شرکت در لاتاری گرین کارت آمریکا</a></li>
+                        <li class="mb-2"><a href="/" class="text-light size-5">شرایط شرکت در لاتاری گرین کارت آمریکا</a>
+                        </li>
                         <li class="mb-2"><a href="/" class="text-light size-5">شرایط سنی شرکت در لاتاری</a></li>
-                        <li class="mb-2"><a href="/" class="text-light size-5">مراحل شرکت در لاتاری گرین کارت آمریکا</a></li>
-                      
+                        <li class="mb-2"><a href="/" class="text-light size-5">مراحل شرکت در لاتاری گرین کارت آمریکا</a>
+                        </li>
+
                     </ul>
                 </div>
-                <div class="col-4 d-flex flex-wrap">
+                <div class="col-lg-4 col-md-6 col-12 d-flex flex-wrap">
                     <div class="ft-title pb-3 mb-4 col-12">
                         <span class="text-lightBlue mb-0 sans-Bold size-4">تماس با ما</span>
                     </div>
@@ -738,7 +803,7 @@
                                 <span class="text-light size-5">Whatsapp</span>
                                 <a href="/" class="FaNum text-light sans-Medium ">09121256987</a>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="col-12 d-flex align-items-center contact-us footer-contect">
@@ -750,8 +815,7 @@
                         <div class="info pe-3 d-flex justify-content-between ">
                             <a href="/" class="FaNum text-light sans-Medium size-5 ps-3">asanlottery@info.com</a>
                             <ul class="d-flex justify-content-start p-0 m-0">
-                                <li class="ps-3"><a href="" class="text-light"><i
-                                            class="bi bi-instagram"></i></a></li>
+                                <li class="ps-3"><a href="" class="text-light"><i class="bi bi-instagram"></i></a></li>
                                 <li class="ps-3"><a href="" class="text-light"><i class="bi bi-telegram"></i></a>
                                 </li>
                                 <li><a href="" class="text-light"><i class="bi bi-whatsapp"></i></a></li>
@@ -759,12 +823,12 @@
                         </div>
                     </div>
                 </div>
-             
+
                 <div class="col-12">
                     <div class="copyRight pt-4 mt-5 d-flex justify-content-center">
-                        <p class="text-lightGray mb-0 size-5">
-                             تمامی حقوق برای وب سایت آسان لاتاری محفوظ است.
-                            <span class="px-3">© ۱۴۰۰ -۲۰۲۱</span>
+                        <p class="text-lightGray mb-0 text-center">
+                            تمامی حقوق برای وب سایت آسان لاتاری محفوظ است.
+                            <span class="px-2 px-md-3">© ۱۴۰۰ -۲۰۲۱</span>
                             <a href="/" class="text-lightGray">www.asanlottery.com</a>
                         </p>
                     </div>
@@ -815,6 +879,40 @@
             });
         });
 
+        // header js
+        $(function () {
+            $('#openMobile').click(function (e) {
+                $(this).parents('.navbar-col').find('.navbar-mobile').addClass('open');
+                e.preventDefault();
+                return false;
+            });
+
+            $('#closeMobile').click(function (e) {
+                $(this).parents('.navbar-mobile').removeClass('open');
+                e.preventDefault();
+                return false;
+            });
+        });
+        $(document).on('click', function (e) {
+            if ($(e.target).closest(".navbar-mobile").length === 0) {
+                $(".navbar-mobile").removeClass('open');
+            }
+        });
+        // header js
+
+        let twoCahnceBox = document.getElementById("twoChance")
+        if (document.getElementById('married').checked) {
+            twoCahnceBox.style.display = "block";
+        } else if (document.getElementById('single').checked) {
+            twoCahnceBox.style.display = "none";
+        }
+        function showTwoChance() {
+            if (document.getElementById('married').checked) {
+                twoCahnceBox.style.display = "block";
+            } else if (document.getElementById('single').checked) {
+                twoCahnceBox.style.display = "none";
+            }
+        }
     </script>
 </body>
 
